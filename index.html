@@ -3,169 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multiphasic Labs</title>
+  <title>Multiphasic Labs – Safer AI for Mental Health</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --navy: #1a2b5b;
-      --navy-light: #24376b;
-      --accent: #33ccff;
-      --accent-dim: rgba(51, 204, 255, 0.15);
-      --white: #f8fafc;
-      --muted: #94a3b8;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'DM Sans', -apple-system, sans-serif;
-      background: var(--navy);
-      color: var(--white);
-      line-height: 1.6;
-      min-height: 100vh;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-
-    /* Header */
-    header {
-      padding: 1.5rem 0;
-      border-bottom: 1px solid rgba(51, 204, 255, 0.2);
-    }
-
-    .logo {
-      height: 48px;
-      width: auto;
-      display: block;
-    }
-
-    /* Hero */
-    .hero {
-      padding: 4rem 0 5rem;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 1rem;
-      color: var(--white);
-    }
-
-    .hero .tagline {
-      font-size: 1.25rem;
-      color: var(--muted);
-      max-width: 540px;
-      margin: 0 auto 2.5rem;
-    }
-
-    .hero .accent {
-      color: var(--accent);
-    }
-
-    .cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: var(--accent);
-      color: var(--navy);
-      text-decoration: none;
-      font-weight: 600;
-      padding: 0.875rem 1.5rem;
-      border-radius: 8px;
-      transition: background 0.2s, transform 0.15s;
-    }
-
-    .cta:hover {
-      background: #5dd5ff;
-      transform: translateY(-1px);
-    }
-
-    /* Sections */
-    section {
-      padding: 3rem 0;
-    }
-
-    section h2 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: var(--accent);
-    }
-
-    section p {
-      color: var(--muted);
-      margin-bottom: 1rem;
-    }
-
-    .card {
-      background: var(--navy-light);
-      border: 1px solid rgba(51, 204, 255, 0.15);
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .card h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-      color: var(--white);
-    }
-
-    .card p {
-      margin-bottom: 0;
-      font-size: 0.95rem;
-    }
-
-    .card a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .card a:hover {
-      text-decoration: underline;
-    }
-
-    /* Footer */
-    footer {
-      padding: 2rem 0;
-      margin-top: 3rem;
-      border-top: 1px solid rgba(51, 204, 255, 0.2);
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <div class="container">
-      <img
-        src="assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png"
-        alt="Multiphasic Labs"
-        class="logo"
-      />
+      <a href="index.html" class="logo-link">
+        <img
+          src="assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png"
+          alt="Multiphasic Labs"
+          class="logo"
+        />
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Product</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
 
@@ -174,45 +33,56 @@
       <div class="container">
         <h1>Building safer <span class="accent">AI for mental health</span></h1>
         <p class="tagline">
-          Multiphasic Labs builds tooling to evaluate and improve the safety of AI systems in sensitive domains—starting with mental health chatbots.
+          We build tooling to evaluate and improve the safety of AI systems in sensitive domains—starting with mental health chatbots.
         </p>
-        <a href="https://github.com/multiphasic-labs/clinical-testing-tool" class="cta" target="_blank" rel="noopener noreferrer">
-          View our MVP on GitHub →
-        </a>
+        <a href="product.html" class="cta">Learn about our tool</a>
+        <a href="https://github.com/multiphasic-labs/clinical-testing-tool" class="cta btn-secondary" style="margin-left: 0.75rem;" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
       </div>
     </section>
 
-    <section>
-      <div class="container">
-        <h2>What we're building</h2>
-        <p>
-          Our first product is the <strong>Mental Health Safety Tester</strong>—a Python CLI tool for scripted pre-deployment testing of mental-health-oriented chatbots. It runs synthetic vulnerable-user personas against a target system, then uses an LLM-as-judge to score responses against clinical safety criteria.
-        </p>
-        <div class="card">
-          <h3>Clinical Testing Tool (MVP)</h3>
+    <div class="page-content">
+      <section>
+        <div class="container">
+          <h2>What we're building</h2>
           <p>
-            Scripted personas, configurable judge model, and structured JSON results. Designed as a building block for offline safety evaluation—not for evaluating real users. 
-            <a href="https://github.com/multiphasic-labs/clinical-testing-tool" target="_blank" rel="noopener noreferrer">Open on GitHub →</a>
+            Our first product is the <strong>Mental Health Safety Tester</strong>—a Python CLI for scripted pre-deployment testing of mental-health-oriented chatbots. It runs synthetic vulnerable-user personas against your system, then uses an LLM-as-judge to score responses against clinical safety criteria.
+          </p>
+          <div class="grid-2">
+            <div class="card">
+              <h3>Scripted personas</h3>
+              <p>JSON-defined multi-turn scripts simulating users in crisis (e.g. passive or active suicidal ideation) and non-crisis scenarios (e.g. mild anxiety).</p>
+            </div>
+            <div class="card">
+              <h3>Structured evaluation</h3>
+              <p>Judge model evaluates each conversation on crisis urgency and avoidance of diagnosis/treatment advice. Results saved as timestamped JSON (and optional Markdown).</p>
+            </div>
+          </div>
+          <p style="margin-top: 1rem;">
+            <a href="product.html">Read more about the product →</a>
           </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <div class="container">
-        <h2>Get in touch</h2>
-        <p>
-          We're early-stage and focused on making AI systems safer in high-stakes contexts. For collaboration or feedback, reach out via GitHub.
-        </p>
-      </div>
-    </section>
+      <section>
+        <div class="container">
+          <h2>Why it matters</h2>
+          <p>
+            Deploying chatbots in mental health contexts without safety evaluation is risky. Our tool is one building block for an offline safety pipeline—not a replacement for clinical review or governance, but a repeatable way to catch regressions and compare systems before they go live.
+          </p>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <p>
-        © Multiphasic Labs · <a href="https://github.com/multiphasic-labs/clinical-testing-tool" target="_blank" rel="noopener noreferrer">clinical-testing-tool</a>
-      </p>
+      <p>© Multiphasic Labs</p>
+      <nav class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="product.html">Product</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/multiphasic-labs/clinical-testing-tool" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
     </div>
   </footer>
 </body>
