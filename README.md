@@ -18,6 +18,12 @@ python3 -m http.server 8000
 - `product.html` — Mental Health Safety Tester overview and features
 - `contact.html` — Get in touch / GitHub
 - `styles.css` — Shared styles
-- `assets/` — Logo and images
+- `sitemap.xml` — Sitemap for search engines (`https://multiphasiclabs.com/sitemap.xml`)
+- `robots.txt` — Crawl rules and sitemap reference
+- `assets/` — Logo, favicon, images
 
 No build step required.
+
+## SEO
+
+After deploying, add the site in [Google Search Console](https://search.google.com/search-console) and submit `https://multiphasiclabs.com/sitemap.xml`. Pages include meta descriptions, canonical URLs, Open Graph / Twitter cards, and JSON-LD structured data.

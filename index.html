@@ -1,71 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multiphasic Labs – Safer AI for Mental Health</title>
+  <meta name="description" content="Multiphasic Labs builds open-source AI safety tooling for mental health. Test chatbots with scripted personas and LLM-as-judge evaluation before deployment.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Multiphasic Labs">
+  <meta name="theme-color" content="#1a2b5b">
+  <link rel="canonical" href="https://multiphasiclabs.com/">
+  <title>Multiphasic Labs | AI Safety Tools for Mental Health Chatbots</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Multiphasic Labs">
+  <meta property="og:title" content="Multiphasic Labs | AI Safety Tools for Mental Health Chatbots">
+  <meta property="og:description" content="Open-source tooling to evaluate mental health chatbots—scripted personas, LLM judges, structured results.">
+  <meta property="og:url" content="https://multiphasiclabs.com/">
+  <meta property="og:image" content="https://multiphasiclabs.com/assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png">
+  <meta property="og:image:alt" content="Multiphasic Labs logo">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Multiphasic Labs | AI Safety for Mental Health Chatbots">
+  <meta name="twitter:description" content="Open-source safety evaluation for mental health AI—personas, judges, structured results.">
+  <meta name="twitter:image" content="https://multiphasiclabs.com/assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png">
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://multiphasiclabs.com/#organization",
+        "name": "Multiphasic Labs",
+        "url": "https://multiphasiclabs.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://multiphasiclabs.com/assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png"
+        },
+        "description": "Multiphasic Labs builds practical tooling to evaluate and improve the safety of AI systems in sensitive domains, including mental health chatbots.",
+        "sameAs": [
+          "https://github.com/multiphasic-labs",
+          "https://github.com/multiphasic-labs/clinical-testing-tool"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://multiphasiclabs.com/#website",
+        "url": "https://multiphasiclabs.com/",
+        "name": "Multiphasic Labs",
+        "description": "AI safety tooling for mental health—scripted personas and LLM evaluation for chatbot testing.",
+        "publisher": { "@id": "https://multiphasiclabs.com/#organization" },
+        "inLanguage": "en-US"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="logo-link">
+      <a href="/" class="logo-link">
         <img
-          src="assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png"
-          alt="Multiphasic Labs"
+          src="/assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png"
+          alt="Multiphasic Labs — AI safety for mental health"
           class="logo"
+          fetchpriority="high"
         />
       </a>
-      <nav class="site-nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="product.html">Product</a>
-        <a href="contact.html">Contact</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/" aria-current="page">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/product.html">Product</a>
+        <a href="/contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="container">
-        <h1>Building safer <span class="accent">AI for mental health</span></h1>
+        <h1 id="hero-heading">Building safer <span class="accent">AI for mental health</span></h1>
         <p class="tagline">
           We build tooling to evaluate and improve the safety of AI systems in sensitive domains—starting with mental health chatbots.
         </p>
-        <a href="product.html" class="cta">Learn about our tool</a>
-        <a href="https://github.com/multiphasic-labs/clinical-testing-tool" class="cta btn-secondary" style="margin-left: 0.75rem;" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+        <div class="cta-row">
+          <a href="/product.html" class="cta">Learn about our tool</a>
+          <a href="https://github.com/multiphasic-labs/clinical-testing-tool" class="cta btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+        </div>
       </div>
     </section>
 
     <div class="page-content">
-      <section>
+      <section aria-labelledby="building-heading">
         <div class="container">
-          <h2>What we're building</h2>
+          <h2 id="building-heading">What we're building</h2>
           <p>
             Our first product is the <strong>Mental Health Safety Tester</strong>—a Python CLI for scripted pre-deployment testing of mental-health-oriented chatbots. It runs synthetic vulnerable-user personas against your system, then uses an LLM-as-judge to score responses against clinical safety criteria.
           </p>
           <div class="grid-2">
-            <div class="card">
+            <article class="card">
               <h3>Scripted personas</h3>
               <p>JSON-defined multi-turn scripts simulating users in crisis (e.g. passive or active suicidal ideation) and non-crisis scenarios (e.g. mild anxiety).</p>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
               <h3>Structured evaluation</h3>
               <p>Judge model evaluates each conversation on crisis urgency and avoidance of diagnosis/treatment advice. Results saved as timestamped JSON (and optional Markdown).</p>
-            </div>
+            </article>
           </div>
           <p style="margin-top: 1rem;">
-            <a href="product.html">Read more about the product →</a>
+            <a href="/product.html">Read more about the product →</a>
           </p>
         </div>
       </section>
 
-      <section>
+      <section aria-labelledby="why-heading">
         <div class="container">
-          <h2>Why it matters</h2>
+          <h2 id="why-heading">Why it matters</h2>
           <p>
             Deploying chatbots in mental health contexts without safety evaluation is risky. Our tool is one building block for an offline safety pipeline—not a replacement for clinical review or governance, but a repeatable way to catch regressions and compare systems before they go live.
           </p>
@@ -76,14 +136,17 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© Multiphasic Labs</p>
-      <nav class="footer-nav">
-        <a href="about.html">About</a>
-        <a href="product.html">Product</a>
-        <a href="contact.html">Contact</a>
+      <p>© <span id="year"></span> Multiphasic Labs</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/about.html">About</a>
+        <a href="/product.html">Product</a>
+        <a href="/contact.html">Contact</a>
         <a href="https://github.com/multiphasic-labs/clinical-testing-tool" target="_blank" rel="noopener noreferrer">GitHub</a>
       </nav>
     </div>
   </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

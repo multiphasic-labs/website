@@ -1,34 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About – Multiphasic Labs</title>
+  <meta name="description" content="Multiphasic Labs mission: safer AI in mental health. Open, auditable tooling—not clinical practice. Learn how we think about chatbot safety evaluation.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Multiphasic Labs">
+  <meta name="theme-color" content="#1a2b5b">
+  <link rel="canonical" href="https://multiphasiclabs.com/about.html">
+  <title>About Us | Multiphasic Labs — Mental Health AI Safety</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Multiphasic Labs">
+  <meta property="og:title" content="About Multiphasic Labs">
+  <meta property="og:description" content="Our mission: practical tooling for AI safety in mental health. Open source, repeatable pipelines, and clear boundaries with clinical care.">
+  <meta property="og:url" content="https://multiphasiclabs.com/about.html">
+  <meta property="og:image" content="https://multiphasiclabs.com/assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png">
+  <meta property="og:image:alt" content="Multiphasic Labs logo">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Multiphasic Labs">
+  <meta name="twitter:description" content="Mission, values, and roadmap for AI safety tooling in mental health.">
+  <meta name="twitter:image" content="https://multiphasiclabs.com/assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png">
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://multiphasiclabs.com/#organization",
+        "name": "Multiphasic Labs",
+        "url": "https://multiphasiclabs.com/",
+        "logo": "https://multiphasiclabs.com/assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png",
+        "sameAs": [
+          "https://github.com/multiphasic-labs",
+          "https://github.com/multiphasic-labs/clinical-testing-tool"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://multiphasiclabs.com/" },
+          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://multiphasiclabs.com/about.html" }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://multiphasiclabs.com/#website",
+        "url": "https://multiphasiclabs.com/",
+        "name": "Multiphasic Labs",
+        "publisher": { "@id": "https://multiphasiclabs.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://multiphasiclabs.com/about.html#webpage",
+        "url": "https://multiphasiclabs.com/about.html",
+        "name": "About Multiphasic Labs",
+        "description": "Mission and values for AI safety tooling in mental health contexts.",
+        "isPartOf": { "@id": "https://multiphasiclabs.com/#website" },
+        "about": { "@id": "https://multiphasiclabs.com/#organization" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="logo-link">
+      <a href="/" class="logo-link">
         <img
-          src="assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png"
-          alt="Multiphasic Labs"
+          src="/assets/MULTIPHASIC-9eef11f0-719d-473e-8d4f-6bf93ca47f46.png"
+          alt="Multiphasic Labs — AI safety for mental health"
           class="logo"
         />
       </a>
-      <nav class="site-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="product.html">Product</a>
-        <a href="contact.html">Contact</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/about.html" aria-current="page">About</a>
+        <a href="/product.html">Product</a>
+        <a href="/contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <div class="page-content">
       <section>
         <div class="container">
@@ -54,7 +121,7 @@
             We're early-stage. The Clinical Testing Tool is our first MVP—a building block for offline safety evaluation. We're iterating on personas, criteria, and judge design, and we're interested in feedback from teams building mental-health-oriented or other sensitive-domain AI.
           </p>
           <p>
-            <a href="contact.html">Get in touch</a> or <a href="https://github.com/multiphasic-labs/clinical-testing-tool" target="_blank" rel="noopener noreferrer">explore the repo on GitHub</a>.
+            <a href="/contact.html">Get in touch</a> or <a href="https://github.com/multiphasic-labs/clinical-testing-tool" target="_blank" rel="noopener noreferrer">explore the repo on GitHub</a>.
           </p>
         </div>
       </section>
@@ -63,14 +130,17 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© Multiphasic Labs</p>
-      <nav class="footer-nav">
-        <a href="about.html">About</a>
-        <a href="product.html">Product</a>
-        <a href="contact.html">Contact</a>
+      <p>© <span id="year"></span> Multiphasic Labs</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/about.html">About</a>
+        <a href="/product.html">Product</a>
+        <a href="/contact.html">Contact</a>
         <a href="https://github.com/multiphasic-labs/clinical-testing-tool" target="_blank" rel="noopener noreferrer">GitHub</a>
       </nav>
     </div>
   </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
