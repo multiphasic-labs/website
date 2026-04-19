@@ -86,6 +86,11 @@
           class="logo"
         />
       </a>
+      <input type="checkbox" id="site-nav-toggle" class="site-nav-toggle" />
+      <label for="site-nav-toggle" class="site-nav-hamburger">
+        <span class="site-nav-hamburger-icon"></span>
+        <span class="visually-hidden">Toggle menu</span>
+      </label>
       <nav class="site-nav" aria-label="Primary">
         <a href="/">Home</a>
         <a href="/about.html" aria-current="page">About</a>
@@ -96,21 +101,24 @@
   </header>
 
   <main id="main-content">
+    <div class="page-hero">
+      <div class="container">
+        <div class="page-title">
+          <h1>About Multiphasic Labs</h1>
+          <p>We're focused on making AI systems safer in high-stakes, human-facing contexts.</p>
+        </div>
+      </div>
+    </div>
     <div class="page-content">
       <section>
         <div class="container">
-          <div class="page-title">
-            <h1>About Multiphasic Labs</h1>
-            <p>We're focused on making AI systems safer in high-stakes, human-facing contexts.</p>
-          </div>
-
           <h2>Mission</h2>
           <p>
             Multiphasic Labs exists to build practical tooling for evaluating and improving the safety of AI—especially in domains like mental health, where poor behavior can cause real harm. We start with scripted testing and LLM-as-judge evaluation so teams can run repeatable safety checks before deployment.
           </p>
 
           <h2>What we believe</h2>
-          <ul>
+          <ul class="beliefs-list">
             <li><strong>Safety is a process, not a one-time check.</strong> We build for pipelines: personas, runs, and structured results that fit into CI and review workflows.</li>
             <li><strong>Tooling should be open and auditable.</strong> Our Mental Health Safety Tester is open source so teams can inspect, extend, and adapt it to their context.</li>
             <li><strong>Testing is not clinical practice.</strong> Our tools are for evaluating AI systems only. They must not be used to assess or triage real people in crisis.</li>
